@@ -131,3 +131,13 @@ Route::middleware(['auth'])->group(function () {
         ->name('api.factura.detalles');
 
 });
+
+
+
+Route::get('facturas/{id}/pdf', [FacturaController::class, 'pdf'])
+    ->name('facturas.pdf');
+
+
+
+Route::get('facturas/{numFactura}/excel', [FacturaController::class, 'excel'])
+    ->name('facturas.excel');

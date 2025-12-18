@@ -53,6 +53,17 @@
             </tr>
         </tfoot>
     </table>
+
+        <a href="{{ route('facturas.pdf', $factura->Num_factura) }}"
+   class="btn btn-danger">
+    Descargar PDF
+</a>
+
+  <a href="{{ route('facturas.excel', $factura->Num_factura) }}"
+       class="btn btn-success">
+        Exportar Excel
+    </a>
+
     
     <a href="{{ route('facturas.index') }}" class="btn btn-secondary">Volver al Historial</a>
 </div>
