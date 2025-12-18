@@ -1,3 +1,41 @@
+primero clona el repositorio con git clone URL del repo
+
+
+Dado que el proyecto genera facturas en excel se debe habilitar la extension de xamp: (php.ini)
+
+extension=gd
+y se reinicia el sevidor apache
+
+
+dentro del proyecto:
+composer install 
+
+
+
+ahora se ejecuta 
+cp .env.example .env
+(para copiar el archivo env exampple)
+
+
+se ejecuta 
+
+php artisan key:generate
+
+
+
+ahora se crea una base de datos en phpmyadmin
+
+
+dentro del .env se configura la conexion a la base de datos
+
+
+se ejecuta el comando php artisan migrate:fresh --seed
+
+y finalmente el servidor de prueba de laravel
+
+php artisan serve
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
