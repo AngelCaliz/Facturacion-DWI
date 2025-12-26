@@ -1,6 +1,6 @@
-## Pasos para ejecutar el proyecto en Local 
+## Pasos para ejecutar el proyecto en Local
 1. Clona el repositorio: git clone URL del proyecto
-2. Dado que el proyecto genera facturas en excel se debe habilitar la extension de Xampp: (php.ini) ;extension=gd
+2. Dado que el proyecto genera facturas en excel se debe habilitar la extension en php.ini: ;extension=gd
 3. Se reinicia el sevidor apache
 4. Se abre una terminal dentro del proyecto y se ejecuta el comadno: composer install
 5. Para copiar el archivo env example se ejecutaen el terminal: cp .env.example .env
@@ -10,7 +10,7 @@
 9. Para migrar las tablas y ejecutar los seeders se ejecuta el comando: php artisan migrate:fresh --seed
 10. Finalmente se leavanta el servidor de prueba de laravel: php artisan serve
 
-## Ejecutar el pryecto en la web
+## Ejecutar el proyecto en la Web
 URL: http://factura.wuaze.com/
 (Desplegado con InfinityFree)
 
