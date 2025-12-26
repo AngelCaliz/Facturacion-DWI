@@ -1,3 +1,7 @@
+## Ejecutar el proyecto en la Web
+URL: http://factura.wuaze.com/
+(Desplegado con InfinityFree)
+
 ## Pasos para ejecutar el proyecto en Local
 1. Clona el repositorio: git clone URL del proyecto
 2. Dado que el proyecto genera facturas en excel se debe habilitar la extension en php.ini: ;extension=gd
@@ -10,9 +14,7 @@
 9. Para migrar las tablas y ejecutar los seeders se ejecuta el comando: php artisan migrate:fresh --seed
 10. Finalmente se leavanta el servidor de prueba de laravel: php artisan serve
 
-## Ejecutar el proyecto en la Web
-URL: http://factura.wuaze.com/
-(Desplegado con InfinityFree)
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
